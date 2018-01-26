@@ -10,7 +10,7 @@ import PlaygroundSupport
 
 let containerFrame = CGRect(x: 0, y: 0, width: 375, height: 667)
 let containerView = UIView(frame: containerFrame)
-containerView.backgroundColor = UIColor.lightGray
+containerView.backgroundColor = UIColor.yellow
 
 
 //: Add a green box to our container view
@@ -30,7 +30,7 @@ containerView.addSubview(redView)
 //: the `center` property later
 let circle = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 50.0, height: 50.0))
 circle.center = containerView.center
-circle.layer.cornerRadius = 25.0
+circle.layer.cornerRadius = 10.0
 circle.backgroundColor = UIColor.orange
 
 // Add the view to the containerView
