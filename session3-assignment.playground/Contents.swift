@@ -84,7 +84,7 @@ func getNews(url: String, completion:@escaping (News?) -> Void) {
 //: # Use the function to get the News
 
 /// The array of dictionaries that will hold all of our issues data returned from the network request
-var news: [News]?
+var news: News?
 
 /// The url of the JSON endpoint
 let urlString = "https://newsapi.org/v2/everything?q=apple&from=2018-01-25&to=2018-01-25&sortBy=popularity&apiKey=34ba2541cc714c86ac43726f2f94eb10"
@@ -111,7 +111,7 @@ getNews(url: urlString) { (news) in
   DispatchQueue.main.async {
     // Anything in here is execute on the main thread
     // You should reload your table here.
-    //tableView.reload()
+    //tableView.reloadData()
     
   }
   PlaygroundPage.current.finishExecution()
