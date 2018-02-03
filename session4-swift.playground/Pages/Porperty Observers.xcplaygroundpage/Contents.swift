@@ -39,6 +39,9 @@ var color: String = "green" {
 // by reading the code in the property observers
 print("Color: \(color)")
 
+color = "red"
+print(color)
+print("=======")
 
 //: > Using a custom parameter name for `willSet`
 color = "orange"

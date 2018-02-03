@@ -28,10 +28,3 @@ var box: UIView = {
   return view
 }()
 
-//creates a global variable
-var globalString = "Very important global string";
-
-//also creates a global variable
-var globalString = function() {
-  return "Very important global string";
-};

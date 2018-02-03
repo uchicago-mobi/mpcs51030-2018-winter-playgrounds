@@ -10,12 +10,13 @@ import PlaygroundSupport
 
 
 class MyViewController : UIViewController {
-  let colors: [UIColor] = [.red,.blue,.green,.purple]
+  
+  let colors: [UIColor] = [UIColor.red,.blue,.green,.purple]
   
   // Create a yellow box view
   var box: UIView = {
       let view  = UIView(frame: CGRect(x: 100,y: 100, width: 100, height: 100))
-    view.backgroundColor = .gray
+    view.backgroundColor = .yellow
     return view
   }()
 
@@ -31,15 +32,13 @@ class MyViewController : UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    box.backgroundColor = .yellow
     self.view.addSubview(box)
-    
-    
+
     // Create a tap gesture recoginzer
     let tapGesture = UITapGestureRecognizer(target: self,
                                             action: #selector(handleTap2(_:)))
     
-    tapGesture.numberOfTapsRequired = 3
+    tapGesture.numberOfTapsRequired = 1
     
     // Add tap gesture recognizer to the box
     box.addGestureRecognizer(tapGesture)
@@ -49,7 +48,7 @@ class MyViewController : UIViewController {
   @objc
   func handleTap2(_ gestureRecognizer: UIGestureRecognizer) {
     print("Tapped: \(gestureRecognizer)")
-    self.currentColor = .purple
+    self.currentColor = .blue
     print("View: \(String(describing: gestureRecognizer.view))")
   }
 }
