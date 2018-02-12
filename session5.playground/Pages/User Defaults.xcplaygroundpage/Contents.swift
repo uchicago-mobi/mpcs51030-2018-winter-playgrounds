@@ -18,7 +18,7 @@ let readNumber = defaults.object(forKey: "number")
 // Print out all the values (not just yours)
 print(defaults.dictionaryRepresentation())
 
-defaults.synchronize()
+
 
 defaults.register(defaults: ["soundsOn": true,
                              "theme": "dark"])
