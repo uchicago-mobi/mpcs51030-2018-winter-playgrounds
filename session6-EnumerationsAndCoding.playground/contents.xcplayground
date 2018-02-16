@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='Enumerations'/>
+        <page name='Enumerations (Apple)'/>
+        <page name='Error Handling'/>
+        <page name='Try This Password'/>
+        <page name='Codable'/>
+        <page name='NSCoding'/>
+        <page name='Type Casting'/>
+        <page name='Clousures'/>
+    </pages>
+</playground>
