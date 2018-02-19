@@ -18,7 +18,7 @@ func safeDivision(numerator: Double, denominator: Double) throws -> Double {
 
 
 do {
-  let result = try safeDivision(numerator: 10, denominator: 2)
+  let result = try safeDivision(numerator: 10, denominator: 0)
   print("Answer: \(result)")
 } catch is DivisionError {
   print("Error!!")

@@ -13,7 +13,7 @@ let snoopy = Dog(name: "Snoopy", color: "White", age: 50)
 let encoder = JSONEncoder()
 if let encoded = try? encoder.encode(snoopy) {
   if let json = String(data: encoded, encoding: .utf8) {
-    print(json)
+    print(">\(json)")
   }
   
   let decoder = JSONDecoder()
@@ -65,6 +65,7 @@ func getPostsFromDisk() -> [Dog] {
     fatalError(error.localizedDescription)
   }
 }
+let snoopy2 = Dog(name: "Snoopy2", color: "White", age: 50)
 
-savePostsToDisk(posts: [snoopy])
+savePostsToDisk(posts: [snoopy,snoopy2])
 
