@@ -9,27 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var headerLabel: UILabel!
   
-    //
-    //
-    //
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.headerLabel.accessibilityTraits = UIAccessibilityTraitHeader
-        
-    }
-
-    
-    //
-    // MARK: - Magic Tap
-    //
+  @IBOutlet weak var headerLabel: UILabel!
   
-    override func accessibilityPerformMagicTap() -> Bool {
-        print("You performed the magic tap")
-        UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, "You performed the magic tap")
-        return true
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.headerLabel.accessibilityTraits = UIAccessibilityTraitHeader
+  }
+  
+  
+  //
+  // MARK: - Magic Tap
+  //
+  override func accessibilityPerformMagicTap() -> Bool {
+    print("You performed the magic tap")
+    UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, "You performed the magic tap")
+    return true
+  }
 }
 
