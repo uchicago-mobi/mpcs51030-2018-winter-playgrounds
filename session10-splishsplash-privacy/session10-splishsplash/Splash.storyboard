@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ghl-7q-NPg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Bsm-aL-RFL">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="ghl-7q-NPg" customClass="SplashViewController" customModule="session10_splishsplash" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oGf-rw-Ta3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsW-7R-oEF">
+                                <rect key="frame" x="0.0" y="291" width="375" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="72"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bka-Ee-sO9">
+                                <rect key="frame" x="127" y="477" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="33a-gk-37u"/>
+                                    <constraint firstAttribute="height" constant="40" id="LDu-At-Qge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapContinue:" destination="ghl-7q-NPg" eventType="touchUpInside" id="dYG-23-tNC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oli-zl-0wf" firstAttribute="trailing" secondItem="vsW-7R-oEF" secondAttribute="trailing" id="64K-eS-gtK"/>
+                            <constraint firstItem="vsW-7R-oEF" firstAttribute="centerY" secondItem="oGf-rw-Ta3" secondAttribute="centerY" id="7eY-vZ-iaQ"/>
+                            <constraint firstItem="vsW-7R-oEF" firstAttribute="leading" secondItem="Oli-zl-0wf" secondAttribute="leading" id="k5v-Z1-iJ5"/>
+                            <constraint firstItem="bka-Ee-sO9" firstAttribute="centerX" secondItem="vsW-7R-oEF" secondAttribute="centerX" id="knp-bb-SRe"/>
+                            <constraint firstItem="vsW-7R-oEF" firstAttribute="centerX" secondItem="oGf-rw-Ta3" secondAttribute="centerX" id="pD6-mp-UrB"/>
+                            <constraint firstItem="bka-Ee-sO9" firstAttribute="top" secondItem="vsW-7R-oEF" secondAttribute="bottom" constant="100" id="ssd-lA-gXl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oli-zl-0wf"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="bka-Ee-sO9" id="jMH-Na-1xR"/>
+                        <outlet property="screenLabel" destination="vsW-7R-oEF" id="q5t-8X-TgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TS1-fN-bvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
